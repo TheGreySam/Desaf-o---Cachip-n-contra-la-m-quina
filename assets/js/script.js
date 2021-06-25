@@ -2,14 +2,19 @@
 //Papel le gana a piedra
 //Piedra le gana a tijera
 //Si ambos jugadores eligen la misma opción es un empate
+
+window.alert() = function($)
+
 console.log("Bienvenido a...");
+window.alert("Bienvenido a...");
 console.log("Cachipún contra la máquina.");
+window.alert("Cachipún contra la máquina.");
 
 const repetitions = prompt("Ingrese la cantidad de veces que desearias repetir el juego");
 
 const repetitionsQty = Number.parseInt(repetitions);
 
-console.log("Deseas que el juego se repita ${repetitionsQty} veces");
+console.log("Deseas que el juego se repita " + repetitionsQty + " veces");
 
 for (let count = 0; count <= repetitionsQty; count = count + 1){
   //pedir respuesta
@@ -28,7 +33,7 @@ for (let count = 0; count <= repetitionsQty; count = count + 1){
   } else if (randomMoveIndex === 3){
     machineMove = "Tijera";
   } else {
-    console.error("La opción randomMoveIndex no es válida: ${randomMoveIndex1}");
+    console.error("La opción randomMoveIndex no es válida: " + randomMoveIndex);
   }
 
 
@@ -67,6 +72,8 @@ for (let count = 0; count <= repetitionsQty; count = count + 1){
 
   //mostrar resultado
   console.log({userMove, machineMove});
-  console.log("El ganador es: ${winner}");
+
+  console.log("El ganador es: " + winner);
+  window.alert("El ganador es: " + winner);
 
 };

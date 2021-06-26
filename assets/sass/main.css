@@ -10121,5 +10121,18 @@ h3 {
     max-width: 1140px;
   }
 }
+img {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  justify-content: center;
+}
+nav a {
+  text-align: center;
+  font-size: 30pt;
+  font-style: bold;
+}
 
 /*# sourceMappingURL=main.css.map */

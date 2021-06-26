@@ -4,3 +4,16 @@
 
 
 @import "abstract/variables";
+
+img {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  justify-content: center;
+  a {
+    text-align: center;
+    font-size: 30pt;
+    font-style: bold;
+  }
+}

@@ -3,7 +3,7 @@
 //Piedra le gana a tijera
 //Si ambos jugadores eligen la misma opción es un empate
 
-window.alert() = function($)
+
 
 console.log("Bienvenido a...");
 window.alert("Bienvenido a...");
@@ -72,8 +72,16 @@ for (let count = 0; count <= repetitionsQty; count = count + 1){
 
   //mostrar resultado
   console.log({userMove, machineMove});
+  window.alert("Has usado " + userMove + ", la máquina ha usado " + machineMove);
 
   console.log("El ganador es: " + winner);
-  window.alert("El ganador es: " + winner);
+  if(winner === "User") {
+    window.alert("Felicidades! has derrotado a la Máquina")
+  } else if (winner === "Machine") {
+    window.alert("Has sido derrotado")
+  } else if (winner === "Both") {
+    window.alert("Empate")
+  }
+  //window.alert("El ganador es: " + winner);
 
 };
